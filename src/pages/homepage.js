@@ -1,11 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+import { Button, Card } from "react-bootstrap";
 
-const Homepage = () => {
-  return (
-    <div id="base">
-      <p>Hello World</p>
-    </div>
-  );
-};
+class Homepage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
+  render() {
+    return (
+      <div id="base">
+        <Card body>{this.state.count}</Card>
+        <Button
+          variant="primary"
+          onClick={() => {
+            this.setState({ count: this.state.count + 1 });
+          }}
+        >
+          Click Me
+        </Button>{" "}
+      </div>
+    );
+  }
+}
 
 export default Homepage;

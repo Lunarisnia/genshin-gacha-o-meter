@@ -5,9 +5,11 @@ import Homepage from "./pages/homepage";
 function App() {
   return (
     <div className="App">
-      <div className="App-Header">
-        <Homepage />
-      </div>
+      <header className="App-header">
+        <Homepage value="1">
+          <p>Hello World</p>
+        </Homepage>
+      </header>
     </div>
   );
 }
