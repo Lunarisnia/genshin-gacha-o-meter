@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
-import Strap from './components/strap';
+import React from "react";
+import "./App.css";
+import Homepage from "./pages/homepage";
 
 function App() {
   return (
     <div className="App">
-      <Strap>
-        <p>Hello World</p>
-      </Strap>
+      <div className="App-Header">
+        <Homepage />
+      </div>
     </div>
   );
 }
