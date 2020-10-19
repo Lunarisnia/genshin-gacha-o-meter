@@ -2,44 +2,7 @@ import React from "react";
 import { CardDeck, Container } from "react-bootstrap";
 import { BannerCard } from "./BannerCard";
 
-export function BannerGrid() {
-  const banners = [
-    {
-      title: "WANDERLUST INVOCATION",
-      imgUrl:
-        "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-07_Wanderlust_Invocation.png",
-      description: "Standard Banner",
-      expiry: "Did not expire",
-    },
-    {
-      title: "WANDERLUST INVOCATION2",
-      imgUrl:
-        "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-07_Wanderlust_Invocation.png",
-      description: "Standard Banner",
-      expiry: "Did not expire",
-    },
-    {
-      title: "WANDERLUST INVOCATION3",
-      imgUrl:
-        "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-07_Wanderlust_Invocation.png",
-      description: "Standard Banner",
-      expiry: "Did not expire",
-    },
-    {
-      title: "WANDERLUST INVOCATION3",
-      imgUrl:
-        "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-07_Wanderlust_Invocation.png",
-      description: "Standard Banner",
-      expiry: "Did not expire",
-    },
-    {
-      title: "WANDERLUST INVOCATION3",
-      imgUrl:
-        "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-07_Wanderlust_Invocation.png",
-      description: "Standard Banner",
-      expiry: "Did not expire",
-    },
-  ];
+export function BannerGrid({banners}) {
   function getBanner() {
     let list = [];
     const deck = [];

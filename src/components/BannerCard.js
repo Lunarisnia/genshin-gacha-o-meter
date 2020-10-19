@@ -1,12 +1,14 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 export function BannerCard({ bannerData }) {
+  const history = useHistory();
   return (
     <Card
       // style={{ width: "20rem", margin: "50px" }}
       className="Banner-card"
-      onClick={() => alert(bannerData.title)}
+      onClick={() => history.push(`/banner/${bannerData.id}`)}
     >
       <Card.Img variant="top" src={bannerData.imgUrl} />
       <Card.Body>

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Homepage from "./pages/Homepage";
+import { IndexRouter } from "./app/router";
 
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <IndexRouter />
     </div>
   );
 }
