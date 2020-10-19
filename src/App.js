@@ -1,13 +1,11 @@
-import React from 'react';
-import './App.css';
-import Strap from './components/strap';
+import React from "react";
+import "./App.css";
+import { IndexRouter } from "./app/router";
 
 function App() {
   return (
     <div className="App">
-      <Strap>
-        <p>Hello World</p>
-      </Strap>
+      <IndexRouter />
     </div>
   );
 }
